@@ -1,0 +1,25 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+<form #myEmlForm="ngForm" (ngSubmit)="submit()">  
+  <input  type = "email"
+          name = "emailInput"
+          placeholder="enter your email"
+          ngModel
+          required
+          email 
+  
+  >
+  <input  type = "password"
+          name = "password"
+          placeholder="password"
+          ngModel 
+          required
+          
+  >
+  
+  <button type = "submit">
+    submit form 
+  </button>
+  
+  
+  </form>

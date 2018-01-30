@@ -1,24 +1,27 @@
-<form #myEmlForm="ngForm" (ngSubmit)="submit()">  
-<input  type = "email"
-        name = "emailInput"
-        placeholder="enter your email"
-        ngModel
-        required
-        email 
 
->
-<input  type = "password"
-        name = "password"
-        placeholder="password"
-        ngModel 
-        required
-        
->
+<router-outlet></router-outlet>
 
-<button type = "submit">
-  submit form 
-</button>
+<h1>
+    {{title}}
+  </h1>
+  
+  <mat-form-field>
+    <input matInput placeholder="Simple line Input" [(ngModel)]="title">
+  </mat-form-field>
+  
+ 
+  <mat-icon>toll</mat-icon>
 
+  <!-- <mat-icon>home</mat-icon> -->
 
-</form>
-
+  
+  <button mat-raised-button>Button Me Up</button>
+  
+  <mat-form-field>
+    <mat-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let item of items" [value]="item.value">
+        {{item.view}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  

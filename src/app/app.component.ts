@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import {NgForm} from '@angular/forms';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,15 +8,6 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent 
 {
-  @ViewChild("myEmlForm") myEmlForm: NgForm;
-submit() 
-{ 
-  console.log(this.myEmlForm);
-  console.log(this.myEmlForm.value.emailInput);
-  console.log(this.myEmlForm.value.password);
-  
-  this.myEmlForm.reset();
-}
-
+ 
 }
 
